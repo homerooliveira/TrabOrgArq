@@ -17,7 +17,7 @@ public class Utils {
     }
 
     //Completa o binario com 0s ￠ esquerda se necess￡rio
-    public static String completar(String binario, int tamanho){
+    private static String completar(String binario, int tamanho){
 
         int dif = tamanho - binario.length();
         String pad = "";

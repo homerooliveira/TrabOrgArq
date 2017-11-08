@@ -56,7 +56,7 @@ public class App {
 						int tamanhoPalavra = parser.nextInt();
 
 						 CacheAssociativa cacheAssociativa = new CacheAssociativa(tamanhoTag, tamanhoLinha, tamanhoPalavra);
-						 MemoriaAssociativa memoriaAssociativa = new MemoriaAssociativa(tamanhoTag);
+						 MemoriaAssociativa memoriaAssociativa = new MemoriaAssociativa(tamanhoLinha);
 						 AcessoAssociativo acessoAssociativo = new AcessoAssociativo(cacheAssociativa, memoriaAssociativa, acessos);
 
 						 pw.println();
