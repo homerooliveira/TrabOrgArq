@@ -36,7 +36,7 @@ public class MemAssociativa {
 
 	private void atualizaLRU(int i) {
 		
-		System.out.print("\nLRU � ");
+		System.out.print("\nLRU  ");
 		for(int n : LRU)
 			System.out.print(n);
 		System.out.println("\nLRU removeu " + i);
@@ -44,7 +44,7 @@ public class MemAssociativa {
 		LRU.add(i);
 		System.out.println("LRU adicionei " + LRU.get(LRU.size()-1));
 		
-		System.out.print("\nLRU � ");
+		System.out.print("\nLRU  ");
 		for(int n : LRU)
 			System.out.print(n);
 		System.out.println("\n");
