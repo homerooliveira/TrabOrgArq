@@ -76,18 +76,14 @@ public class Cache {
 	
 	public String getData() {
 		StringBuilder sb = new StringBuilder();
-		
-		Linha aux;
-		
+
 		for(int i=0;i<linhas.length;i++){
-			
-			aux = linhas[i];
+			Linha aux = linhas[i];
 			sb.append("\nLinha " + i + "\t");
 			
 			for(int j=0;j<aux.dados.length;j++){				
 				sb.append(aux.dados[j] + "\t");
 			}
-			
 		}
 		
 		return sb.toString();		
@@ -101,7 +97,5 @@ public class Cache {
 				
 		
 	}
-	
-	
-	
+
 }
