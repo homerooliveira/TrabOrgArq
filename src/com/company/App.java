@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class App {
 	
-	//Sequ?ncia de acessos ? memor?ria
+	//Sequ￪ncia de acessos ￠ memor￡ria
 	public static ArrayList<String> acessos = new ArrayList<String>();
 			
 	//Contadores
@@ -43,7 +43,7 @@ public class App {
 	
 	public static void direto(){
 		
-		System.out.println("\nSimula??o de cache com acesso direto");
+		System.out.println("\nSimula￧￣o de cache com acesso direto");
 		System.out.println(cache + "\n");
 		
 		String aux = "";
@@ -67,7 +67,7 @@ public class App {
 		}
 		
 		//Imprime status da cache e contagem de hit/miss
-		System.out.println("\nConte?do da cache com acesso direto");
+		System.out.println("\nConte￺do da cache com acesso direto");
 		System.out.println(cache.getData());
 		resultado();
 		
@@ -75,7 +75,7 @@ public class App {
 	
 	public static void associativo(){
 		
-		System.out.println("\nSimula??o de cache com acesso associativo");
+		System.out.println("\nSimula￧￣o de cache com acesso associativo");
 		System.out.println(cacheAssoc + "\n");
 		
 		String aux = "";
@@ -100,11 +100,11 @@ public class App {
 		}
 		
 		//Imprime status da cache e contagem de hit/miss
-		System.out.println("\nConte?do da mem?ria associativa e da cache");
+		System.out.println("\nConte￺do da mem￳ria associativa e da cache");
 				
 		for(int i=0;i<memAssoc.getTamanho();i++){
 			System.out.println("Linha " + i);
-			System.out.print("Mem?ria associativa - " + memAssoc.getData(i));
+			System.out.print("Mem￳ria associativa - " + memAssoc.getData(i));
 			System.out.println(" Cache - " + cacheAssoc.getData(i));
 		}
 		
@@ -128,8 +128,8 @@ public class App {
 		
 	}
 	
-	//C?digo obtido em https://stackoverflow.com/a/41707271
-	// Converte string em hexadecimal para string em bin?rio	
+	//C￳digo obtido em https://stackoverflow.com/a/41707271
+	// Converte string em hexadecimal para string em bin￡rio	
 	public static String hexToBin(String hex) {
 	    
 		int tamanho = hex.length() * 4;
@@ -141,7 +141,7 @@ public class App {
 	    return binario;
 	}
 	
-	//Completa o binario com 0s ? esquerda se necess?rio
+	//Completa o binario com 0s ￠ esquerda se necess￡rio
 	public static String completar(String binario, int tamanho){
 	    
 	        int dif = tamanho - binario.length();
