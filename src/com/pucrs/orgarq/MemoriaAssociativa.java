@@ -1,4 +1,4 @@
-package com.company;
+package com.pucrs.orgarq;
 
 import java.util.ArrayList;
 

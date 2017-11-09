@@ -1,4 +1,4 @@
-package com.company;
+package com.pucrs.orgarq;
 
 import java.math.BigInteger;
 
@@ -7,13 +7,14 @@ public class Utils {
     // Converte string em hexadecimal para string em bin￡rio
     public static String hexToBin(String hex) {
 
-        int tamanho = hex.length() * 4;
-        String binario = new BigInteger(hex, 16).toString(2);
-
-        if(binario.length() < tamanho)
-            binario = completar(binario, tamanho);
-
-        return binario;
+        String preBin = new BigInteger(hex, 16).toString(2);
+        Integer length = preBin.length();
+        if (length < 8) {
+            for (int i = 0; i < 8 - length; i++) {
+                preBin = "0" + preBin;
+            }
+        }
+        return preBin;
     }
 
     //Completa o binario com 0s ￠ esquerda se necess￡rio

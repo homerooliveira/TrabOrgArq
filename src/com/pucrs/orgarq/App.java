@@ -1,4 +1,4 @@
-package com.company;
+package com.pucrs.orgarq;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -14,20 +14,20 @@ public class App {
 	
 	public static void main(String[] args) {
 
-		//Inserir a leitura do arquivo aqui
-		acessos.add("3A");
-		acessos.add("3B");
-		acessos.add("C1");
-		acessos.add("B6");
-		acessos.add("3C");
-		acessos.add("41");
-		acessos.add("11");
-		acessos.add("A3");
-		acessos.add("D2");
+		try (Scanner scanner = new Scanner(Paths.get("enderecos.csv"))) {
+			scanner.useDelimiter("\\r\\n");
+			while (scanner.hasNext()) {
+				final String next = scanner.next();
+				System.out.println(next);
+				acessos.add(next);
+			}
 
+			System.out.println(acessos);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		salvarResultados();
-
 	}
 
 	private static void salvarResultados() {

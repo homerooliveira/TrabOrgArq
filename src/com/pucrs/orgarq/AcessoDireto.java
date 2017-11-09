@@ -1,8 +1,8 @@
-package com.company;
+package com.pucrs.orgarq;
 
 import java.util.ArrayList;
 
-import static com.company.Utils.hexToBin;
+import static com.pucrs.orgarq.Utils.hexToBin;
 
 public class AcessoDireto {
 
@@ -31,6 +31,8 @@ public class AcessoDireto {
             aux = hexToBin(acessos.get(i));
 
             String tag = aux.substring(0, cache.tamTag);
+
+
             String linha = aux.substring(cache.tamTag, cache.tamLinha+cache.tamTag);
 
             if(!cache.buscaTag(tag, linha)){

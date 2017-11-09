@@ -1,8 +1,8 @@
-package com.company;
+package com.pucrs.orgarq;
 
 import java.util.ArrayList;
 
-import static com.company.Utils.hexToBin;
+import static com.pucrs.orgarq.Utils.hexToBin;
 
 public class AcessoAssociativo {
 
